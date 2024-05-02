@@ -108,6 +108,13 @@ The vaccine isn't effective in preventing spread of vaccine among LGBTQ. Based o
 ## Druggies
 
 
+```{r}
+barchartGC(~infected + treatment,data=drugUser)
+barchartGC(~infected + treatment,data=drugUser, type="percent")
+```
+
+Based on the data we can say that those who had Covid-19, the Druggies who didn't get vaccinated there was a difference between 88% with Covid and about 10% with placebo.
+
 # Overall Results and Conclusions
 
 ```{r}
