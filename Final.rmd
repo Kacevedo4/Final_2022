@@ -78,7 +78,11 @@ We can say that the vaccine is not effective in preventing covid among females b
 
 ## LGBTQ
 
-
+```{r}
+barchartGC(~infected + treatment,data=lgbtq)
+barchartGC(~infected + treatment,data=lgbtq, type="percent")
+```
+```Based on the graph, we can say that the among individuals who received the vaccination and had Covid, there was an 80% Covid compared. 20% placebo difference. There was no apparent variance among those received vaccinations and were (ok)
 
 ## Druggies
 
