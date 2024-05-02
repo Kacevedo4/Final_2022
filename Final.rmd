@@ -37,6 +37,8 @@ barchartGC(~infected + treatment,data=male)
 barchartGC(~infected + treatment,data=male, type="percent")
 ```
 ```
+Based on the information shown in the graph we can say that there is a difference 30% with Covid and 70% with a placebo 
+to those who received Covid.There is a small difference among those who received the vaccinations (ok).
 
 
 
