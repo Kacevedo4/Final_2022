@@ -84,6 +84,18 @@ barchartGC(~infected + treatment,data=lgbtq, type="percent")
 ```
 ```Based on the graph, we can say that the among individuals who received the vaccination and had Covid, there was an 80% Covid compared. 20% placebo difference. There was no apparent variance among those received vaccinations and were (ok)
 
+#Numerical
+
+```{r}
+tableLGBTQ <- xtabs(~infected + treatment, data=lgbtq)
+rowPerc(tableLGBTQ)
+colPerc(tableLGBTQ)
+```
+There is a 40% difference in individuals who got Covid among those who received the vaccination. About 80% of those who received the placebo had a 20% chance of not being sick. There was no discernible difference among those who received vaccinations and were (ok)
+
+```
+
+
 ## Druggies
 
 
