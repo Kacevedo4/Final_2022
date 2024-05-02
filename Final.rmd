@@ -46,6 +46,14 @@ colPerc(tableMale)
 ```
 ```the data shows that  Effective on males in this group were  two times difference among those who received the vaccinations and experienced Covid and  70% of those who took the placebo didnt get it, compared to 30% of those who got the vaccination. There was not a noticeable distinction among those who received vaccinations and (ok).
 
+##Inferential 
+```{r}
+chisq.test(tableMale)
+chisqtestGC(tableMale)
+maleFisher <- fisher.test(tableMale)
+maleFisher
+```
+This shows that the vaccine is not effective in preventing Covid among males.P-valuse is 0.0000000000001098 which its too small that's why it failed to reject the null hypothesis.However according to the Fisher's Exact test the P-value is 0.00000000000004631 meaning there is a difference in getting Covid and being a male.so as a male, the chances of acquiring Covid are the same.
 
 
 ```
