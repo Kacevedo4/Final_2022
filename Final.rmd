@@ -56,14 +56,15 @@ maleFisher
 This shows that the vaccine is not effective in preventing Covid among males.P-valuse is 0.0000000000001098 which its too small that's why it failed to reject the null hypothesis.However according to the Fisher's Exact test the P-value is 0.00000000000004631 meaning there is a difference in getting Covid and being a male.so as a male, the chances of acquiring Covid are the same.
 
 
+
+
+##Females
+```{r}
+barchartGC(~infected + treatment,data=female)
+barchartGC(~infected + treatment,data=female, type="percent")
 ```
 
-```
-```
-
-
-
-## Females
+Based on the information we can say that those who received Covid there was a difference between 40% and 60% placebo among the females who received the vaccination. The Female who got the vaccination and were (ok) showed no difference.
 
 
 ## LGBTQ
