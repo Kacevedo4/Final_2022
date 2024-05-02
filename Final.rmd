@@ -36,9 +36,22 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 barchartGC(~infected + treatment,data=male)
 barchartGC(~infected + treatment,data=male, type="percent")
 ```
-```
-Based on the information shown in the graph we can say that there is a difference 30% with Covid and 70% with a placebo 
+```Based on the information shown in the graph we can say that there is a difference 30% with Covid and 70% with a placebo 
 to those who received Covid.There is a small difference among those who received the vaccinations (ok).
+##Numerical
+```{r}
+tableMale <- xtabs(~infected + treatment, data=male)
+rowPerc(tableMale)
+colPerc(tableMale)
+```
+```the data shows that  Effective on males in this group were  two times difference among those who received the vaccinations and experienced Covid and  70% of those who took the placebo didnt get it, compared to 30% of those who got the vaccination. There was not a noticeable distinction among those who received vaccinations and (ok).
+
+
+
+```
+
+```
+```
 
 
 
@@ -53,3 +66,10 @@ to those who received Covid.There is a small difference among those who received
 
 
 # Overall Results and Conclusions
+
+```{r}
+tableMale <- xtabs(~infected + treatment, data=male)
+rowPerc(tableMale)
+colPerc(tableMale)
+```
+
