@@ -115,6 +115,16 @@ barchartGC(~infected + treatment,data=drugUser, type="percent")
 
 Based on the data we can say that those who had Covid, the Druggies who didn't get vaccinated there was a difference between 88% with Covid and about 10% with placebo.
 
+##Numerical 
+
+```{r}
+tableDrug <- xtabs(~infected + treatment, data=drugUser)
+rowPerc(tableDrug)
+colPerc(tableDrug)
+```
+```Based on the information the Druggies who took the vaccine that got Covid and there was a difference. The Druggies that took the placebo with 12% chance of not getting infected and 88% for the Druggies. Among the people that were (ok) and took the vaccine there was no significant diligence.
+
+
 # Overall Results and Conclusions
 
 ```{r}
