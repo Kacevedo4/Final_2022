@@ -93,7 +93,16 @@ colPerc(tableLGBTQ)
 ```
 There is a 40% difference in individuals who got Covid among those who received the vaccination. About 80% of those who received the placebo had a 20% chance of not being sick. There was no discernible difference among those who received vaccinations and were (ok)
 
+#inferetial 
+
+```{r}
+chisq.test(tableLGBTQ)
+chisqtestGC(tableLGBTQ)
+lgbtqFisher <- fisher.test(tableLGBTQ)
+lgbtqFisher
 ```
+The vaccine isn't effective in preventing spread of vaccine among LGBTQ. Based on the Fisher's Exact test P-value are 0.00000001029. If you take the placebo or covid you are in the same probability receiving covid if you are a LGBTQ.
+
 
 
 ## Druggies
