@@ -67,6 +67,15 @@ barchartGC(~infected + treatment,data=female, type="percent")
 Based on the information we can say that those who received Covid there was a difference between 40% and 60% placebo among the females who received the vaccination. The Female who got the vaccination and were (ok) showed no difference.
 
 
+##inferential 
+```{r}
+chisq.test(table.Female)
+chisqtestGC(table.Female)
+femaleFisher <- fisher.test(tableFemale)
+femaleFisher
+```
+We can say that the vaccine is not effective in preventing covid among females because according to the Fisher's Exact test the p-value is 0.0002162 and The Chi-squared p-value is 0.002732 so its too small.
+
 ## LGBTQ
 
 
