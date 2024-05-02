@@ -136,9 +136,4 @@ drugFisher
 
 # Overall Results and Conclusions
 
-```{r}
-tableMale <- xtabs(~infected + treatment, data=male)
-rowPerc(tableMale)
-colPerc(tableMale)
-```
-
+We can concluded that the vaccination is ineffective in protecting males, females,LGBTQ,and druggies from covid because We fail to reject the null hypothesis.
