@@ -124,6 +124,15 @@ colPerc(tableDrug)
 ```
 ```Based on the information the Druggies who took the vaccine that got Covid and there was a difference. The Druggies that took the placebo with 12% chance of not getting infected and 88% for the Druggies. Among the people that were (ok) and took the vaccine there was no significant diligence.
 
+##Inferential
+```{r}
+chisq.test(tableDrug)
+chisqtestGC(tableDrug)
+drugFisher <- fisher.test(tableDrug)
+drugFisher
+```
+```The vaccine is not effective in preventing spread of Covid. According to on the Fisher's Exact test the p-value is 0.000000000232 The information provided shows that the vaccine does not prevent Covid
+
 
 # Overall Results and Conclusions
 
