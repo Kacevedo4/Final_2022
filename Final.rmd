@@ -30,6 +30,11 @@ drugUser = filter(FinalData, DrugUser =="yes")
 
 A new  preventative vaccine (covid921) is under test in clinical trials. Given the nature of this vaccine it is suspected that the drug may exhibit different effectiveness across the variety of subpopulations tracked. Consider population subgroups by gender( guys and gals), drug use, and sexual orientation. Write a complete report that separately considers this drug for each subgroup and your recommendations as to whether people in the subgroup should take the vaccine. Structure your report in four sections each devoted to one of the four subgroups, use null and alternative hypothesis statements and correct statistical verbage when referencing p-values in conclusions.
 
+$H_0$ ; no statistical differences in the data, which implies that the vaccine and the placebo are equally effective
+
+$H_A$ : the vaccine and placebo are NOT equally effective.
+
+
 ## Males
 
 ```{r}
@@ -69,11 +74,10 @@ Based on the information we can say that those who received Covid there was a di
 
 ##inferential 
 ```{r}
-chisq.test(table.Female)
-chisqtestGC(table.Female)
-femaleFisher <- fisher.test(tableFemale)
-femaleFisher
+barchartGC(~infected + treatment,data=female)
+barchartGC(~infected + treatment,data=female, type="percent")
 ```
+
 We can say that the vaccine is not effective in preventing covid among females because according to the Fisher's Exact test the p-value is 0.0002162 and The Chi-squared p-value is 0.002732 so its too small.
 
 ## LGBTQ
